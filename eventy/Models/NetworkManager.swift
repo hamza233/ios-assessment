@@ -24,10 +24,7 @@ class NetworkManager{
                                 self.eventList = result.events
                                 events = result.events
                                 completionHandler(events)
-
                             }
-
-
                         }
                     catch{
                             print(error)

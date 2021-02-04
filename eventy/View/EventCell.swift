@@ -7,10 +7,11 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 class EventCell: UITableViewCell {
     
-    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var time: UILabel!

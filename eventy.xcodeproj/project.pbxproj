@@ -16,6 +16,7 @@
 		BBAE40E425C93E9400A3E0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAE40E225C93E9400A3E0E4 /* Main.storyboard */; };
 		BBAE40E625C93E9700A3E0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAE40E525C93E9700A3E0E4 /* Assets.xcassets */; };
 		BBAE40E925C93E9700A3E0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAE40E725C93E9700A3E0E4 /* LaunchScreen.storyboard */; };
+		BBB8694525CBFA28006C01CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8694425CBFA28006C01CA /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BBAE40E525C93E9700A3E0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBAE40E825C93E9700A3E0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBAE40EA25C93E9700A3E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBB8694425CBFA28006C01CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				BBAE40E025C93E9400A3E0E4 /* EventListViewController.swift */,
 				BB5516D425C966BE004211E7 /* EventCell.swift */,
+				BBB8694425CBFA28006C01CA /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				BB07C27425C94768004497BA /* DataModel.swift in Sources */,
 				BB07C27125C94731004497BA /* NetworkManager.swift in Sources */,
 				BBAE40E125C93E9400A3E0E4 /* EventListViewController.swift in Sources */,
+				BBB8694525CBFA28006C01CA /* DetailView.swift in Sources */,
 				BB5516D525C966BE004211E7 /* EventCell.swift in Sources */,
 				BBAE40DD25C93E9400A3E0E4 /* AppDelegate.swift in Sources */,
 				BBAE40DF25C93E9400A3E0E4 /* SceneDelegate.swift in Sources */,
