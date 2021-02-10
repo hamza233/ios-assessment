@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class EventListViewController: UITableViewController {
     var networkManager = NetworkManager()
     var eventList = [Event]()                   // will hold all events
@@ -113,6 +114,7 @@ class EventListViewController: UITableViewController {
 
 //MARK:- Search Bar methods
 
+@available(iOS 13.0, *)
 extension EventListViewController: UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         

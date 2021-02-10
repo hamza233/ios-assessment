@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 
+@available(iOS 13.0, *)
 class DetailView: UIViewController {
     // the variable ev will be sent from the EventListViewController, it will hold the event the user clicked on
     var ev: Event!
