@@ -17,6 +17,7 @@
 		BBAE40E625C93E9700A3E0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAE40E525C93E9700A3E0E4 /* Assets.xcassets */; };
 		BBAE40E925C93E9700A3E0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAE40E725C93E9700A3E0E4 /* LaunchScreen.storyboard */; };
 		BBB8694525CBFA28006C01CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB8694425CBFA28006C01CA /* DetailView.swift */; };
+		BBE1985125D3140400F44092 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1985025D3140400F44092 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BBAE40E825C93E9700A3E0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBAE40EA25C93E9700A3E0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBB8694425CBFA28006C01CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BBE1985025D3140400F44092 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,8 @@
 		BB07C27625C9478D004497BA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BBAE40E025C93E9400A3E0E4 /* EventListViewController.swift */,
 				BB5516D425C966BE004211E7 /* EventCell.swift */,
-				BBB8694425CBFA28006C01CA /* DetailView.swift */,
+				BBAE40E225C93E9400A3E0E4 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -83,16 +84,34 @@
 		BBAE40DB25C93E9400A3E0E4 /* eventy */ = {
 			isa = PBXGroup;
 			children = (
+				BBE1985525D461BD00F44092 /* Controllers */,
+				BBE1984F25D313E600F44092 /* Utilities */,
 				BB07C27625C9478D004497BA /* View */,
 				BB07C26E25C946D9004497BA /* Models */,
 				BBAE40DC25C93E9400A3E0E4 /* AppDelegate.swift */,
 				BBAE40DE25C93E9400A3E0E4 /* SceneDelegate.swift */,
-				BBAE40E225C93E9400A3E0E4 /* Main.storyboard */,
 				BBAE40E525C93E9700A3E0E4 /* Assets.xcassets */,
 				BBAE40E725C93E9700A3E0E4 /* LaunchScreen.storyboard */,
 				BBAE40EA25C93E9700A3E0E4 /* Info.plist */,
 			);
 			path = eventy;
+			sourceTree = "<group>";
+		};
+		BBE1984F25D313E600F44092 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BBE1985025D3140400F44092 /* Utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BBE1985525D461BD00F44092 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBB8694425CBFA28006C01CA /* DetailView.swift */,
+				BBAE40E025C93E9400A3E0E4 /* EventListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +191,7 @@
 				BB5516D525C966BE004211E7 /* EventCell.swift in Sources */,
 				BBAE40DD25C93E9400A3E0E4 /* AppDelegate.swift in Sources */,
 				BBAE40DF25C93E9400A3E0E4 /* SceneDelegate.swift in Sources */,
+				BBE1985125D3140400F44092 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

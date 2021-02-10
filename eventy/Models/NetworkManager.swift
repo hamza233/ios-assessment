@@ -8,8 +8,8 @@
 import Foundation
 
 class NetworkManager{
+    // eventList will store all the fetched events
     var eventList = [Event]()
-
     func fetchData(completionHandler: @escaping ([Event]) -> Void){
         var events = [Event]()
         if let url = Foundation.URL(string: "https://api.seatgeek.com/events?client_id=MjE1MjE4NDB8MTYxMTk5NjE0My42MjcwMjEz"){
@@ -20,6 +20,7 @@ class NetworkManager{
                     if let safeData = data{
                         do{
                             let result = try decoder.decode(Results.self, from: safeData)
+                            // do this task asynchronously
                             DispatchQueue.main.async {
                                 self.eventList = result.events
                                 events = result.events
@@ -37,17 +38,4 @@ class NetworkManager{
        
     }
     
-    static func fetchImage(urlString: String)-> Data{
-        var result = Data()
-        if let url = URL(string: urlString){
-                let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                    guard let data = data else { return }
-                    DispatchQueue.main.async {
-                        result = data
-                    }
-                }
-                task.resume()
-        }
-        return result
-    }
 }
